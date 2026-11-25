@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legiscan"
+version = "0.1.0"
+description = "Python client for the Legiscan API"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [{ name = "Hannah Johns" }]
+
+[project.optional-dependencies]
+pandas = ["pandas>=2.0"]
+dev = ["pytest", "ruff"]
